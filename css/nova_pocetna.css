@@ -1,0 +1,113 @@
+body{
+
+    margin-left:auto;
+    margin-right:auto;
+    font-family: "Helvetica Light", Helvetica, Geneva, Tahoma, "Nimbus Sans L", sans-serif;
+    font-size:36px;
+    color: #747474;
+    background: #CCCCCC;
+    background:  url(../img/textura.png) repeat;
+}
+
+.cover{
+	background:  url(../img/cover.png) repeat;
+	width: 851px;
+	height:315px;
+	display:block;
+	margin: 0px auto;
+		position:relative;
+}
+
+.copyright{
+    color: #747474;
+    text-align: center;
+    margin-top: 200px;
+    font-size: x-small;
+}
+
+.opis{
+    font-size: large;
+}
+
+div#main
+{
+
+    
+    text-align: center;
+    padding: 15px;
+}
+
+.main{
+
+
+}
+
+
+div#links
+{
+    margin: 0px auto;
+
+    text-align: center;
+
+}
+
+a{
+    float: none;
+    text-decoration: none;
+    color: #747474;
+}
+
+a:hover{
+    font-style: none;
+    text-decoration: none;
+    color: #747474;
+}
+
+a:hover{
+    font-style: none;
+    text-decoration: none;
+    color: #747474;
+}
+
+
+img{
+    border: 0;
+}
+
+#logoi-wrapper{
+	width: 562px;
+	position: absolute;
+	top: 132px;
+	left: 1px;
+	height: 103px;
+	/*overflow: hidden;*/
+}
+
+.logo{
+	margin-right:5px;
+	margin-left:5px;
+	margin-top: 5px;
+}
+
+.logo-box{
+	display:inline-block;
+	height:90px;
+	margin-top: 2px;
+}
+
+.titula{
+    color: #747474;
+    text-align: center;
+    font-size: x-small;
+	width:100%;
+}
+
+#pun_naziv{
+    color: #747474;
+    text-align: right;
+    font-size: x-small;
+	font-weight:bold;
+	width:100%;
+	display: block;
+	text-transform:uppercase;	
+}

@@ -1,0 +1,98 @@
+body{
+
+    margin-left:auto;
+    margin-right:auto;
+    font-family: "Helvetica Light", Helvetica, Geneva, Tahoma, "Nimbus Sans L", sans-serif;
+    font-size:36px;
+    color: #747474;
+    background: #CCCCCC;
+
+}
+
+.copyright{
+    color: #747474;
+    text-align: center;
+    margin-top: 200px;
+    font-size: x-small;
+}
+
+.opis{
+    font-size: large;
+}
+
+div#main
+{
+    width:1200px;
+    height:1200px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 15px;
+    background:  url(../img/pozadina.jpg)no-repeat;
+    background-position:center top;
+
+
+}
+
+div#links
+{
+    margin: 0px auto;
+    width: 1000px;
+    text-align: center;
+
+}
+
+a{
+    float: none;
+    text-decoration: none;
+    color: #747474;
+}
+
+a:hover{
+    font-style: none;
+    text-decoration: none;
+    color: #747474;
+}
+
+a:hover{
+    font-style: none;
+    text-decoration: none;
+    color: #747474;
+}
+
+.imglinija
+{
+    background:  url(../img/linija.png)no-repeat;
+    width:20px;
+    height:50px;
+
+}
+
+.imgstudenti
+{
+    background:  url(../img/student1.png)no-repeat;
+    width:152px;
+    height:50px;
+
+}
+
+.imgstudenti:hover
+{
+    background:  url(../img/student2.png)no-repeat;
+}
+
+.imgkompanija
+{
+    background:  url(../img/kompanija1.png)no-repeat;
+    width:199px;
+    height:50px;
+
+}
+
+.imgkompanija:hover
+{
+    background:  url(../img/kompanija2.png)no-repeat;
+}
+
+img{
+    border: 0;
+}
