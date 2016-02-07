@@ -2,25 +2,26 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,IE=8,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    
+    <meta itemprop="image" content="assets/favicon.png" />
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     
-	<title>KONTEH15 - Sajam poslovnih mogucnosti i strucnih praksi</title>
-    
-		
+	
 	<meta property="og:image" content="http://www.konteh.org/assets/media/konteh_logo.png"/>
       <meta property="og:title" content="KONTEH - Sajam poslovnih mogućnosti i stručnih praksi"/>
       <meta property="og:description"
             content="KONTEH 15 - Sajam poslovnih mogućnosti i stručnih praksi, Fakultet tehničkih nauka Novi Sad"/>
       <meta property="og:type" content="article"/>
-	  
+    
+	<title>KONTEH15 - Sajam poslovnih mogucnosti i strucnih praksi</title>
+    
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-        
+    <!--<meta name="fragment" content="!">-->
+    
         <link rel="stylesheet" href="css/style.css" />
         <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Sans+Caption:400,700' rel='stylesheet' type='text/css' />        
         
@@ -44,11 +45,13 @@
         <script type="text/javascript" src="js/libs/jquery.timer.js"></script>
         <script type="text/javascript" src="js/libs/jqueryui/1.8/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/audio-js/jquery.jplayer.min.js"></script>
+        <script type="text/javascript" src="js/audio-js/jplayer.playlist.min.js"></script>
         <script type="text/javascript" src="js/mediacreed/scrollbar/mc.custom.list.js"></script>
         <script type="text/javascript" src="js/mc.modules.animation.js"></script> 
         <link rel="stylesheet" href="js/video-js/video-js.min.css" media="screen" />
         <script type="text/javascript" src="js/video-js/video.min.js"></script>
-        <!-- END TEMPLATE JavaScript load -->
+        <!-- END TEMPLATE JavaScript load ---->
         
         <!--<script src="http://vjs.zencdn.net/c/video.js"></script>    
         Careful when using the online version because the destroy method throws an error.    
@@ -62,7 +65,7 @@
             params.allowFullScreen = "true";       
             _V_.options.flash.params = params;
     
-        </script>   
+        </script>    
 </head>
 
 <body>
@@ -108,8 +111,9 @@
                         <div class="sub-menu-option-holder" data-module-type="gallery" data-side="none">
                             <div class="sub-menu-option-background"></div>
                             <div class="sub-menu-option-text"><a href="#galerija.html" data-path-href="html/">GALERIJA</a></div>
-							
-							<div class="sub-menu-option-holder" data-module-type="full_width" data-side="custom">
+						</div>
+						
+						<div class="sub-menu-option-holder" data-module-type="full_width" data-side="custom">
                             <div class="sub-menu-option-background"> </div>
                             <div class="sub-menu-option-text"><a href="#raspored.html" data-path-href="html/">RASPORED</a></div>
                         </div>
@@ -118,7 +122,7 @@
                             <div class="sub-menu-option-text"><a href="#podrska.html" data-path-href="html/">PODRŠKA</a></div>
                         </div>
 						
-						</div>
+						
 					</div>
                 </div>
 				
@@ -141,6 +145,7 @@
                             <div class="sub-menu-option-background"> </div>
                             <div class="sub-menu-option-text"><a href="#kako_postati_ucesnik.html" data-path-href="html/">KAKO POSTATI UČESNIK?</a></div>
                         </div>
+						
 					</div>
                 </div>
 				
@@ -149,9 +154,9 @@
                             <div class="menu-option-text"><a href="#medijski.html" data-path-href="html/">MEDIJSKA PODRŠKA</a></div>
                 </div>
 				
-				<div class="menu-option-holder" data-module-type="full_width" data-side="custom">
+				<div class="menu-option-holder" data-module-type="full_width" data-side="custom" style="font-weight: bolder;">
                             <div class="menu-option-background"></div>
-                            <div class="menu-option-text"><a href="#ostavicv.html" data-path-href="html/">OSTAVI CV</a></div>
+                            <div class="menu-option-text"><a href="#ostavicv.html" data-path-href="html/" style="font-size: medium;">OSTAVI CV</a></div>
                 </div>
 				
 				<div class="menu-option-holder" data-module-type="full_width" data-side="custom">
@@ -210,7 +215,6 @@
 						<option value="#raspored.html">Raspored</option>
 						<option value="#podrska.html">Podrška</option>
 						
-						
                     <option value="#"> KOMPANIJE:</option>
 						<option value="#konteh15.html">KONTEH15</option>
 						<option value="#prethodne_godine.html">Prethodne godine</option>
@@ -228,7 +232,7 @@
 						<option value="#fakultet.html"> Fakultet tehničkih nauka</option>
 						
 						
-                    <option value="#akademski_deo.htm"> AKADEMSKI DEO</option>    
+                    <option value="#akademski_deo.html"> AKADEMSKI DEO</option>    
 					
                     <option value="#contact.html"> KONTAKT</option>
 					
@@ -260,175 +264,21 @@
             <div id="menu-hider-icon"></div>
         </div>
     </div><!-- end #menu-container -->
+
+    <div id="module-container">
+    </div>
     
-    <div id="module-container"><!-- start #module-container -->
-    	<div id="slideshow" data-auto-play="true" data-time="5">
-        	
-			<div class="slideshow-slide">
-            	<img src="assets/images/home/images/image1.jpg" onload="onFirstMediaLoaded()"  id="slide-current" alt="" />
-                <div id="slideshow-captions">
-                    <div id="slideshow-captions-text">
-                        <p>Sajam poslovnih mogućnosti i stručnih praksi</p>
-                    </div>
-                    <div id="slideshow-captions-text">
-                        <p>25. i 26. mart 2015. Fakultet tehničkih nauka Novi Sad</p>
-                    </div>
-                </div>
-            </div>
-			
-            <div class="slideshow-slide">
-                <div id="slide-src" data-src="assets/images/home/images/image2.jpg"></div>
-                <div id="slideshow-captions">
-                    <div id="slideshow-captions-text">
-                        <p>Generalni pokrovitelj:</p>
-                    </div>
-                    <div id="slideshow-captions-text">
-                        <p>DEVTECH The Cloud Experts</p>
-                    </div>
-                </div>
-            </div>
-			
-			<div class="slideshow-slide">
-                <div id="slide-src" data-src="assets/images/home/images/image3.jpg"></div>
-                <div id="slideshow-captions">
-                    <div id="slideshow-captions-text">
-                        <p>Zlatni pokrovitelji:</p>
-                    </div>
-					<div id="slideshow-captions-text">
-                        <p>Levi9 , MDCS, Hinttech, VegaIT, RT-RK</p>
-                    </div>
-                </div>
-            </div>
-			
-			<div class="slideshow-slide">
-                <div id="slide-src" data-src="assets/images/home/images/image4.jpg"></div>
-                <div id="slideshow-captions">
-                    <div id="slideshow-captions-text">
-                        <p>Generalni medijski pokrovitelj:</p>
-                    </div>
-                    <div id="slideshow-captions-text">
-                        <p>Radio-televizija Vojvodine</p>
-                    </div>
-                </div>
-            </div>
-			
-            <div class="slideshow-slide">
-                <div id="slide-src" data-src="assets/images/home/images/image5.jpg"></div>
-                <div id="slideshow-captions">
-                    <div id="slideshow-captions-text">
-                        <p>Mesto održavanja sajma KONTEH15:</p>
-                    </div>
-                    <div id="slideshow-captions-text">
-                        <p>Hol Fakulteta tehničkih nauka</p>
-                    </div>
-                </div>    
-            </div>
-           
-            <div class="slideshow-slide">
-                <div id="slide-src" data-src="assets/images/home/images/image6.jpg"></div>
-                <div id="slideshow-captions">
-                    <div id="slideshow-captions-text">
-                        <p>Ostavite svoju biografiju u našu CV bazu</p>
-                    </div>
-                    <div id="slideshow-captions-text">
-                        <p>Mogućnost prvog intervjua na licu mesta</p>
-                    </div> 
-                </div>
-            </div>
-			
-            <div class="slideshow-slide">
-                <div id="slide-src" data-src="assets/images/home/images/image7.jpg"></div>
-                <div id="slideshow-captions">
-                    <div id="slideshow-captions-text">
-                        <p>Organizator sajma KONTEH15:</p>
-                    </div>
-                    <div id="slideshow-captions-text">
-                        <p>Udruženje studenata elektrotehnike Evrope - EESTEC LC Novi Sad</p>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    	
-		<div id="slideshow-thumbs">
-            <div id="slideshow-thumbs-background" class="opacity_6"></div>
-            <div id="slideshow-thumbs-holder">
-                 <div class="slideshow-thumbs-arrow-backward">
-                    <div class="slideshow-thumbs-arrow-backg opacity_2"></div>
-                    <div class="slideshow-thumbs-arrow-backward-sign"></div>
-                </div>                 
-                 <div id="slideshow-thumbs-content">
-                        <div class="horizontal-fix-slideshow-thumbs">
-                            <div id="slideshow-thumbs-container">
-                                <div class="slideshow-thumb-holder">
-                                    <img src="assets/images/home/thumbs/thumb1.jpg" width="105" height="70" alt="" />
-                                    <div id="thumb-image-hover" class="hover-default">
-                                        <div class="background opacity_6"></div>
-                                        <div class="zoom-gallery-small"></div>
-                                    </div>  
-                                                                      
-                                </div>
-                                <div class="slideshow-thumb-holder">
-                                    <img src="assets/images/home/thumbs/thumb2.jpg" width="105" height="70" alt="" />
-                                    <div id="thumb-image-hover" class="hover-default">
-                                        <div class="background opacity_6"></div>
-                                        <div class="zoom-gallery-small"></div>
-                                    </div>
-                                </div>
-                                <div class="slideshow-thumb-holder">
-                                    <img src="assets/images/home/thumbs/thumb3.jpg" width="105" height="70" alt="" />
-                                    <div id="thumb-image-hover" class="hover-default">
-                                        <div class="background opacity_6"></div>
-                                        <div class="zoom-gallery-small"></div>
-                                    </div>
-                                </div>
-                                <div class="slideshow-thumb-holder">
-                                    <img src="assets/images/home/thumbs/thumb4.jpg" width="105" height="70" alt="" />
-                                    <div id="thumb-image-hover" class="hover-default">
-                                        <div class="background opacity_6"></div>
-                                        <div class="zoom-gallery-small"></div>
-                                    </div>
-                                </div>
-                                <div class="slideshow-thumb-holder">
-                                    <img src="assets/images/home/thumbs/thumb5.jpg" width="105" height="70" alt="" />
-                                    <div id="thumb-image-hover" class="hover-default">
-                                        <div class="background opacity_6"></div>
-                                        <div class="zoom-gallery-small"></div>
-                                    </div>
-                                </div>
-								<div class="slideshow-thumb-holder">
-                                    <img src="assets/images/home/thumbs/thumb6.jpg" width="105" height="70" alt="" />
-                                    <div id="thumb-image-hover" class="hover-default">
-                                        <div class="background opacity_6"></div>
-                                        <div class="zoom-gallery-small"></div>
-                                    </div>
-                                </div>
-								<div class="slideshow-thumb-holder">
-                                    <img src="assets/images/home/thumbs/thumb7.jpg" width="105" height="70" alt="" />
-                                    <div id="thumb-image-hover" class="hover-default">
-                                        <div class="background opacity_6"></div>
-                                        <div class="zoom-gallery-small"></div>
-                                    </div>
-                                </div>
-								
-                            </div>
-                        </div>
-                 </div>                 
-                 <div class="slideshow-thumbs-arrow-forward">
-                    <div class="slideshow-thumbs-arrow-backg opacity_2"></div>
-                    <div class="slideshow-thumbs-arrow-forward-sign"></div>
-                 </div>
-                 <div id="slideshow-thumbs-counter"> <span></span> </div>                 
-            </div>
-        </div>
-    </div><!-- end #module-container -->
 </div>
 
-<!-- START LOADING CONTAINER AND ANIMATION-->
-<div id="load-container"></div>
+<div id="load-container">
+</div>
+
 <div id="loading-animation">
-	<img src="assets/loaders/loader.gif" width="16" height="11" alt="Synergy - loading animation"/>
+	<img src="assets/loaders/loader.gif" width="16" height="11" alt="loading animation"/>
 </div>
-<!-- END LOADING CONTAINER AND ANIMATION--> 
+<div id="footer-social-tooltip"></div>
 
+<div id="console-log"></div>
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script> 
 </body>
 </html>
